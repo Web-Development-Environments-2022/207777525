@@ -7,6 +7,9 @@
 	color: #00CCFF;
 } */
 /* Add a black background color to the top navigation */
+*{
+    font-family: Arial, Verdana, sans-serif;
+}
 .menu {
 	position: fixed;
 	width: 100%;
@@ -45,7 +48,31 @@
 	color: white;
   }
   
- 
+  .decorated{
+	overflow: hidden;
+	text-align: center;
+}
+.decorated > span{
+   position: relative;
+   display: inline-block;
+   font: 25px Arial, sans-serif;
+}
+.decorated > span:before, .decorated > span:after{
+   content: '';
+   position: absolute;
+   top: 50%;
+   border-bottom: 2px solid;
+   width: 591px; /* half of limiter*/
+   margin: 0 20px;
+   color: #00B8E6;
+}
+.decorated > span:before{
+   right: 100%;
+}
+.decorated > span:after{
+   left: 100%;
+}
+
   .row {
 	display:flex;
 	flex-wrap:wrap;
